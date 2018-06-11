@@ -16,4 +16,10 @@ autoload -Uz colors
 colors
 # }}}
 
-PROMPT='%F{red}%C > %f'
+# PROMPT {{{
+PROMPT='%F{red}%n@%m > %f'
+RPROMPT="[%d]"
+# }}}
+
+#reload
+alias reload='exec zsh -l'
